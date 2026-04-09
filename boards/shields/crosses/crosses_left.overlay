@@ -39,12 +39,6 @@
   };
 };
 
-// Disable scroll acceleration — linear only, avoids macOS momentum blow-up
-&zip_xy_to_scroll_mapper {
-  time-to-max-speed-ms = <0>;
-  acceleration-exponent = <0>;
-};
-
 // Overrides for the input-split child node
 &trackball_peripheral_split {
   device = <&trackball_peripheral>;
